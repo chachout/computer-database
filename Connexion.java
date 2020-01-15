@@ -8,18 +8,21 @@ public class Connexion
 	String user = "root";
 	String password = "Chabert1996";
 	Connection connexion;
-	public void connexionOpen()
+	public Connection connexionOpen()
 	{
 		try
 		{
 			connexion = DriverManager.getConnection(url,user,password);
 			System.out.println("La connexion est établi");
+			//Statement statement=connexion.createStatement();
+			return connexion;
 		}
 		catch (SQLException e)
 		{
 			System.out.print("La connexion à échouer");
 			e.printStackTrace();
 		}
+		return null;
 	}
 	public void connexionClose()
 	{

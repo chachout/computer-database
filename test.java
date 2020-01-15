@@ -1,15 +1,15 @@
+import java.text.ParseException;
 import java.util.ArrayList;
-
+import com.excilys.cbd.dao.*;
+import com.excilys.cbd.bdd.*;
+import com.excilys.cbd.utilisateur.*;
 public class test 
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) throws ParseException 
 	{
-		ArrayList<Computer> listComputer = new ArrayList<Computer>();
-		Requete r =new Requete("SELECT * FROM computer WHERE company_id=4");
-		Requete m =new Requete("SELECT * FROM computer WHERE company_id=1");
-		listComputer=Requete.demande(m);
-		listComputer=Requete.demande(r);
-		
+		//ArrayList<Computer> listComputer = new ArrayList<Computer>();
+		//listComputer=ComputerDAO.toutComputer();
+		InterfaceUtilisateur.AfficherInterface();
 	}
 
 }

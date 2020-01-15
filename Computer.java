@@ -2,6 +2,7 @@ package com.excilys.cbd.bdd;
 import java.sql.*;
 public class Computer
 {
+	Long computer_id;
 	String name;
 	Timestamp introduced;
 	Timestamp discontinued;
@@ -110,5 +111,7 @@ public class Computer
 	{
 		this.company_id = company_id;
 	}
-
+	public void setComputer_id(Long computer_id) {
+		this.computer_id = computer_id;
+	}
 }

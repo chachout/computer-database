@@ -1,3 +1,4 @@
+package com.excilys.cbd.dao;
 
 public class exceptions extends Exception {
 
